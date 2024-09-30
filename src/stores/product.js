@@ -3,11 +3,11 @@ import { defineStore } from 'pinia'
 
 export const useProductStore = defineStore('product', () => {
   const products = ref([
-    { id: 1, name: 'Harry Poter lá', price: 59.9, qty: 100 },
-    { id: 2, name: 'Os miseraveis', price: 179.9, qty: 50 },
-    { id: 3, name: 'O Senhor dos Aneis', price: 199.9, qty: 75 },
-    { id: 4, name: 'O Hobbit', price: 69.9, qty: 200 },
-    { id: 5, name: 'Dumas & Lumsden', price: 149.9, qty: 150 }
+    { id: 1, name: 'Naruto', price: 1111.00, qty: 1 },
+    { id: 2, name: 'Itachi', price: 100000.00, qty: 5 },
+    { id: 3, name: 'Kakashi', price: 99999999.00, qty: 7 },
+    { id: 4, name: 'Hinata', price: 1293124098.00, qty: 2 },
+    { id: 5, name: 'Tsunade', price: 8888888.00, qty: 1}
   ])
 
   function getProductById(id) {

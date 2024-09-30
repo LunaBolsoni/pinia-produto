@@ -18,3 +18,17 @@ onMounted(() => {
         <hr />
         <h2 v-for="(value, key) in product" :key="key"> {{ key }}: {{ value }}</h2>
 </template>
+
+<style>
+h1{
+        display: grid;
+        
+        align-items: center;
+        color: orange;
+}
+h2{
+        display: grid;
+        align-items: center;
+        color: black;
+}
+</style>
