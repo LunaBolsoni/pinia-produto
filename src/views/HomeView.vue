@@ -21,12 +21,15 @@ const productStore = useProductStore()
     </tr>
     </thead>
     <tbody>
+      <input type="text">
+      
       <tr v-for="product in productStore.products" :key="product.id">
       <td>{{ product.id }}</td>
       <td>{{ product.name }}</td>
       <td>{{ product.price }}</td>
       <td>
         <button @click="visualizar(product.id)">Ver</button>
+        <button @click="productStore.deleteProductById(product.id)">Excluir</button>
       </td>
       </tr>
     </tbody>
